@@ -3,12 +3,9 @@
 /**************/
 *, *::after, *::before {
   box-sizing:border-box;  
+  margin: 0;
+    padding: 0;
 }
-
-
-
-
-
 
 /*********************/
 /* CUSTOM PROPERTIES */
@@ -17,15 +14,54 @@
 	/* startje */
 	--color-text:#111;
 	--color-background:#eee;
+	--color-pathe: #ffe087;
 }
 
+body {
+    font-family: Arial, sans-serif;
+}
 
+nav {
+    background-color: var(--color-pathe);
+    padding: 20px;
+}
 
+nav ul {
+    list-style: none;
+    text-align: center;
+    display: flex; 
+    justify-content: center; 
+    flex-wrap: wrap; 
+}
 
+nav ul li {
+    margin: 10px; 
+    text-align: center; 
+}
 
-/****************/
-/* JOUW STYLING */
-/****************/
+nav ul li img {
+    max-width: 30px;
+    height: auto;
+}
 
-/* jouw code */
+nav ul li p {
+    margin: auto;
+    font-size: 13px;
+}
 
+h1{
+	padding-top: 30px;
+	padding-left: 20px;
+}
+
+p{
+	padding-left: 10px;
+}
+
+img[src="images/hungergames.jpg"] {
+	width: 30%; /* breedte van de afbeelding van de container */
+	height: auto; 
+	margin-top: 20px; 
+	padding-left: 20px;
+  }
+  
