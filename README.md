@@ -120,15 +120,15 @@ Vindt Javascript lastig.
 Madelief
 Vindt Javascript moeilijk.
 
-
+Eline 
+Twijfelt nog welke website ze moet kiezen.
 
   ### Verslag van meeting
   hier na afloop snel de uitkomsten van de meeting vastleggen
 
-  - punt 1
-  - punt 2
-  - nog een punt
-  - ...
+  - Je hoeft niet exact de site na te maken
+  - Probeer geen pixels te gebruiken in CSS maar em of een ander alternatief 
+  - Je bent goed op weg
 
 </details>
 
@@ -144,16 +144,11 @@ Vindt Javascript moeilijk.
   ### Stand van zaken
   hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
 
+  De oefeningen blijf ik steeds maken maar blijf wel bij mijn eigen piste. Verder de eerste pagina uitgewerkt en het was lastig om de foto's op dezelfde hoogte en breedte te zetten. De 'postion' van mijn navigatie was verkeerd omdat mijn H1 niet zichtbaar was op mijn website. Omdat ik bij position:absolute was en niet sticky. Ik heb in de werkgroep geleerd dat het aan de bovenkant moest plakken zodat de andere content wel zichtbaar was op mijn website.
 
-  ### Agenda voor meeting
-  samen met je groepje opstellen
+  - Vragen voor mijn tweede pagina waarom ik er geen tekst onder kan zetten zonder dat H2 verschuift.
 
-  | student 1      | student 2          | student 3    | student 4        |
-  | ---            | ---                | ---          | ---              |
-  | dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
-  | en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
-  | ...            | ...                | ...          | ...              |
-
+  - Scrollen website? Overflow? 
 
   ### Verslag van meeting
   hier na afloop snel de uitkomsten van de meeting vastleggen
@@ -250,8 +245,8 @@ Vindt Javascript moeilijk.
   Nb. ChatGpT en andere AI horen er ook bij.
   Nb. Vermeld de bronnen ook in je code.
 
-  1. bron 1
-  2. bron 2
-  3. ...
+  1. https://tabler-icons.io (Iconen gebruik)
+  2. https://www.youtube.com/watch?v=ly36kn0ug4k (Youtube filmpje in html/css zetten)
+  3. https://developer.mozilla.org/en-US/docs/Web/CSS/z-index (Navigatie en Youtube filmpje stond niet goed onder elkaar, gebruik gemaakt van Z Index voor position:relative)
 
 </details>
