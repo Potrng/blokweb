@@ -198,16 +198,9 @@ WCAG Checklist
   ### Stand van zaken
   hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
 
-
-  ### Agenda voor meeting
-  samen met je groepje opstellen
-
-  | student 1      | student 2          | student 3    | student 4        |
-  | ---            | ---                | ---          | ---              |
-  | dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
-  | en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
-  | ...            | ...                | ...          | ...              |
-
+- Checkboxes probleem tweede pagina 
+- Dark/ Light mode toepassen, heb daar veel moeite mee en kan nergens iets op internet vinden dat geen classes/ div's en id's bevatten. Geen duidelijk beeld wat wel en niet mag. 
+- Toegankelijkheid of het een groot probleem is als je heel lang moet tabben om naar een ander kopje te gaan of dat het opgelost kan worden.
 
   ### Verslag van meeting
   hier na afloop snel de uitkomsten van de meeting vastleggen
