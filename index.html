@@ -1,84 +1,86 @@
 <!DOCTYPE html>
 <html lang="nl">
 
-  <head>
-    <meta charset="UTF-8">
-    <meta name="author" content="jouw naam">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-  
-    <title>Pathé</title>
-  
-    <link href="styles/style.css" rel="stylesheet">
-    <link rel="icon" type="image/svg+xml" href="images/favicon.svg">
-  </head>
+<head>
+  <meta charset="UTF-8">
+  <meta name="author" content="Po Trng Man">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Pathé</title>
+
+  <link href="styles/style.css" rel="stylesheet">
+  <link rel="icon" type="image/svg+xml" href="images/favicon.svg">
+</head>
 
 <body>
 
-  <header> 
-<!--menu button open --->
-<button aria-hidden="true"><img src="images/menu-2.svg" alt="Menu"></button>
-<!--menu button sluit --->
-<nav>
-<button aria-hidden="true"><img src="images/square-rounded-x.svg" alt="Menu sluit"></button>
-<ul>
-	<li><a href="#"><p>Home</p></a></li>
-	<li><a href="#"><img src="images/movie.svg" alt="Films">Films</IMG></a></li>
-	<li><a href="#"><img src="images/clock-hour-8.svg" alt="Tijden en Tickets">Tijden en Tickets</a></li>
-	<li><a href="#"><img src="images/map-pin-filled.svg" alt="Bioscopen">Bioscopen</a></li>
-	<li><a href="#"><img src="images/star-filled.svg" alt="Club Pathè">Club Pathè</a></li>
-</ul>
-</nav>
+  <header>
+    <button aria-hidden="true"><img src="images/menu-2.svg" alt="Menu"></button>
+    <nav>
+      <button aria-hidden="true"><img src="images/square-rounded-x.svg" alt="Menu sluit"></button>
+      <ul>
+        <li><a href="#">
+            <p>Home</p>
+          </a></li>
+        <li><a href="#"><img src="images/movie.svg" alt="Films">Films</a></li>
+        <li><a href="#"><img src="images/clock-hour-8.svg" alt="Tijden en Tickets">Tijden en Tickets</a></li>
+        <li><a href="#"><img src="images/map-pin-filled.svg" alt="Bioscopen" >Bioscopen</a></li>
+        <li><a href="#"><img src="images/star-filled.svg" alt="Club Pathè" >Club Pathè</a></li>
+      </ul>
+      <input type="search" name="search" placeholder="Zoeken" autocomplete="off" aria-label="zoeken">
+    </nav>
+    <a href="#"><img src="images/pathelogo.png" alt="Pathè logo"></a>
+  </header>
 
-<form role="search" action="#">
-  <input type="search" name="search" placeholder="Zoeken" autocomplete="off" aria-label="zoeken">
-  <button type="submit"><img src="images/search.svg" alt="Zoeken"></button>
-</form>
-<a href="#"><img src="images/pathelogo.png" alt="Pathè logo"></a>
-</header>
-
-<main>
-  <h1>Huidige Films</h1>
-<section>
-  <h2> Actueel</h2>
-<ul> 
-  <li><a href="HungerGames.html"><img src="images/hungergames.jpg" alt="The Hunger Games"></a>The Hunger Games</li>
-  <li><a href="#"><img src="images/hardcore.webp" alt="Hardcore Never Dies"></a>Hardcore Never Dies</li>
-  <li><a href="#"><img src="images/fnaf.jpg" alt="Five Nights At Freddy's"></a>Five Nights At Freddy's</li>
-  <li><a href="#"><img src="images/sint.jpg" alt="De Club Van Sinterklaas"></a>De Club Van Sinterklaas</li>
-</ul>
-<button> Zie alle</button>
-</section>
-
-
-<section>
-  <h2>Events & Specials</h2>
-<ul> 
-  <li><a href="#"><img src="images/humanforever.webp" alt="Human Forever"></a>Human Forever</li>
-  <li><a href="#"><img src="images/bassieadriaan.jpg" alt="Bassie en Adriaan"></a>Bassie en Adriaan</li>
-  <li><a href="#"><img src="images/squaringcircle.jpg" alt="Squaring the Circle"></a>Squaring the Circle</li>
-  <li><a href="#"><img src="images/loveactually.jpg" alt="Love Actually"></a>Love Actually</li>
-</ul>
-<button> Zie alle</button>
-</section>
-</main>
-  
+  <main>
+<button>dark/light mode</button>
+    <h1>Huidige Films</h1>
+    <section>
+      <h2> Actueel</h2>
+      <ul>
+        <li><a href="HungerGames.html"><img src="images/hungergames.jpg" alt="The Hunger Games"></a><p>The Hunger Games</p>
+        </li>
+        <li><a href="#"><img src="images/hardcore.webp" alt="Hardcore Never Dies"></a><p>Hardcore Never Dies</p>
+        </li>
+        <li><a href="#"><img src="images/fnaf.jpg" alt="Five Nights At Freddy's"></a><p>Five Nights At Freddy's</p>
+        </li>
+        <li><a href="#"><img src="images/sint.jpg" alt="De Club Van Sinterklaas"></a><p>De Club Van Sinterklaas</p>
+        </li>
+      </ul>
+      <a href="#"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+          <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+          <path d="M9 6l6 6l-6 6" />
+        </svg>Zie alle</a>
+    </section>
 
 
+    <section>
+      <h2>Events & Specials</h2>
+      <ul>
+        <li><a href="#"><img src="images/humanforever.webp" alt="Human Forever"></a><p>Human Forever</p></li>
+        <li><a href="#"><img src="images/bassieadriaan.jpg" alt="Bassie en Adriaan"></a><p>Bassie en Adriaan</p></li>
+        <li><a href="#"><img src="images/squaringcircle.jpg" alt="Squaring the Circle"></a><p>Squaring the Circle</p></li>
+        <li><a href="#"><img src="images/loveactually.jpg" alt="Love Actually"></a><p>Love Actually</p></li>
+      </ul>
+      <a href="#"><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-chevron-right" width="24"
+          height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round"
+          stroke-linejoin="round">
+          <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+          <path d="M9 6l6 6l-6 6" />
+        </svg>Zie alle</a>
+    </section>
+  </main>
 
+  <footer>
+    <ul>
+      <li><a href="#"><img src="images/brand-x.svg" alt="Twitter"></a></li>
+      <li><a href="#"><img src="images/brand-facebook-filled.svg" alt="Facebook"></a></li>
+      <li><a href="#"><img src="images/brand-instagram.svg" alt="Instagram"></a></li>
+      <li><a href="#"><img src="images/brand-tiktok-filled.svg" alt="Tiktok"></a></li>
+    </ul>
+  </footer>
 
-
-
-<footer>
-  <ul> 
-    <li><a href="#"><img src="images/brand-x.svg" alt="Twitter"></a></li>
-    <li><a href="#"><img src="images/brand-facebook-filled.svg" alt="Facebook"></a></li>
-    <li><a href="#"><img src="images/brand-instagram.svg" alt="Instagram"></a></li>
-    <li><a href="#"><img src="images/brand-tiktok-filled.svg" alt="Tiktok"></a></li>
-</footer>
-
-
-
-   <script defer src="scripts/script.js"></script>
+  <script defer src="scripts/script.js"></script>
 </body>
 
 </html>

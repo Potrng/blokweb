@@ -153,11 +153,10 @@ Twijfelt nog welke website ze moet kiezen.
   ### Verslag van meeting
   hier na afloop snel de uitkomsten van de meeting vastleggen
 
-  - punt 1
-  - punt 2
-  - nog een punt
-- ...
-
+  - Ik hield me heel erg vast bij de gedachte dat als we selectoren niet mogen gebruiken dat het niet verboden is. Ik heb tijdens het gesprek de class op mijn tweede html pagina geplaatst zodat ik makkelijker de tweede pagina kan stylen. 
+  - Het verschil van nth-last-child of -type vind ik nog erg lastig soms om ze te onderscheiden. Ik heb geleerd dat type gebruiken beter is dan child. 
+  - Als je alleen items wilt stylen en je kan ze moeilijk aanroepen in de css mag je div gebruiken daar twijfelde ik namelijk bij.
+- Ik gaf aan tijdens het voortganggesprek dat ik moeite had en niet zo goed weet wanneer je een section gebruikt of article etc. 
 </details>
 
 
@@ -172,6 +171,19 @@ Twijfelt nog welke website ze moet kiezen.
   ### Bevindingen
   Lijst met je bevindingen die in de test naar voren kwamen (geef ook aan wat er verbeterd is):
 
+Screenreader test 
+- Ik kan heel gemakkelijk door de website heen tabben.
+- In het hamburger menu wordt elke regel twee keer opgenoemd dus 'Films' 'Films'. Ik heb hiervoor de alt tekst verwijderd zodat alleen de tekst die er al voor staat opgelezen wordt. Dan hoor je het niet meer twee keer maar een keer. Later ben ik erachter gekomen dat het niet mogelijk is om de alt text te verwijderen want een image text kan niet zonder alt dan krijg je een error. 
+- Zie alle buttons worden opgenoemd als zie alle hoofd. 
+- De checkboxes worden niet opgenoemd/ de tekst ook niet (selectievakje uitgeschakeld) - ik heb hiervoor aria-label toegevoegd en nu leest het de locaties wel op maar ik hoor nog steeds (selectievakje uitgeschakeld).
+- Hij leest alle kopjes goed door. 
+- Alle links worden goed opgelezen met een logische zin. 
+
+WCAG Checklist
+- Ik moet bij de tweede pagina met H1 want ik begin nu met een H2. 
+- Ik moet de Alt texten bij plaatjes meer specificeren want bij de tweede pagina heb ik een section met vier keer 'The Hunger Games'. 
+- Nog een darkmode proberen toe te voegen voor de UX verbeteren. 
+- De image voor de tweede pagina overlapt het Youtube filmpje net iets teveel. 
 </details>
 
 
@@ -248,5 +260,6 @@ Twijfelt nog welke website ze moet kiezen.
   1. https://tabler-icons.io (Iconen gebruik)
   2. https://www.youtube.com/watch?v=ly36kn0ug4k (Youtube filmpje in html/css zetten)
   3. https://developer.mozilla.org/en-US/docs/Web/CSS/z-index (Navigatie en Youtube filmpje stond niet goed onder elkaar, gebruik gemaakt van Z Index voor position:relative)
+  4. https://css-tricks.com/focusing-on-focus-styles/ (:Focus states styling voor het tabben )
 
 </details>
