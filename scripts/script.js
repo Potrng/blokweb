@@ -1,7 +1,6 @@
 // JavaScript Document
 console.log("hi");
 
-
 var menuButton = document.querySelector("button");
 
 var menu = document.querySelector("nav");
@@ -10,7 +9,6 @@ var menu = document.querySelector("nav");
 menuButton.onclick = hamburger;
 
 // stap 3: voeg in de functie een class toe aan de nav
-
 function hamburger() {
     menu.classList.add("toonMenu"); console.log("hamburgermenuwerkt");
 }

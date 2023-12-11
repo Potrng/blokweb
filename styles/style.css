@@ -233,10 +233,8 @@ section ul {
 /*Animatie scale op images EERSTE SECTION*/
 main>section:nth-of-type(1) ul li:nth-of-type(1):hover {
   animation-name: vergrootFoto;
-  animation-duration: 3s;
+  animation-duration: 1s;
   border: 2px solid var(--color-pathe);
-  border-radius: 0.5em;
-  background-color: var(--color-pathe);
   font-weight: bold;
 }
 
