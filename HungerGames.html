@@ -18,13 +18,21 @@
         <nav>
             <button aria-hidden="true"><img src="images/square-rounded-x.svg" alt="Menu sluit"></button>
             <ul>
-                <li><a href="#">
+                <li><a href="index.html">
                         <p>Home</p>
                     </a></li>
-                <li><a href="#"><img src="images/movie.svg" alt="Films">Films</a></li>
-                <li><a href="#"><img src="images/clock-hour-8.svg" alt="Tijden en Tickets">Tijden en Tickets</a></li>
-                <li><a href="#"><img src="images/map-pin-filled.svg" alt="Bioscopen">Bioscopen</a></li>
-                <li><a href="#"><img src="images/star-filled.svg" alt="Club Pathè">Club Pathè</a></li>
+                <li><a href="#"><img src="images/movie.svg" alt="Films">
+                        <p aria-hidden="true">Films</p>
+                    </a></li>
+                <li><a href="#"><img src="images/clock-hour-8.svg" alt="Tijden en Tickets">
+                        <p aria-hidden="true">Tijden en Tickets</p>
+                    </a></li>
+                <li><a href="#"><img src="images/map-pin-filled.svg" alt="Bioscopen">
+                        <p aria-hidden="true">Bioscopen</p>
+                    </a></li>
+                <li><a href="#"><img src="images/star-filled.svg" alt="Club Pathè">
+                        <p aria-hidden="true">Club Pathè</p>
+                    </a></li>
             </ul>
             <input type="search" name="search" placeholder="Zoeken" autocomplete="off" aria-label="zoeken">
         </nav>
@@ -33,7 +41,7 @@
 
     <main>
         <article>
-            <h2>Filmpje</h2>
+            <h1>Filmpje</h1>
             <iframe width="560" height="315" src="https://www.youtube.com/embed/39QMHlMxEFI?si=TTXRsKl-qbwTeogp"
                 title="YouTube video player" frameborder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
@@ -51,10 +59,10 @@
             </h2>
 
             <div>
-                <img src="images/IMAX.svg.png" alt="">
-                <img src="images/Logo_Dolby_Atmos.svg.png" alt="">
-                <img src="images/Dolby_Vision_(logo).svg.png" alt="">
-                <img src="images/4DX_2019_logo.svg.png" alt="">
+                <img src="images/IMAX.svg.png" alt="IMAX">
+                <img src="images/Logo_Dolby_Atmos.svg.png" alt="Dolby Atmos">
+                <img src="images/Dolby_Vision_(logo).svg.png" alt="Dolby Vision">
+                <img src="images/4DX_2019_logo.svg.png" alt="4DX">
             </div>
             <button>Tijden en Tickets</button>
         </section>
@@ -86,7 +94,7 @@
         <section>
             <H2>Samenvatting The Hunger Games</H2>
             <p> Release: 16-11-2023 </p>
-            <p>is de ochtend van de tiende jaarlijkse Hongerspelen en de achttienjarige Coriolanus Snow (Blyth)
+            <p>Het is de ochtend van de tiende jaarlijkse Hongerspelen en de achttienjarige Coriolanus Snow (Blyth)
                 jaren voordat hij de tirannieke president van Panem zou worden bereidt zich voor op zijn enige kans op
                 roem en succes.</p>
             <details>
@@ -108,53 +116,73 @@
         <section>
             <h3>Tijden en Tickets</h3>
             <p>Kies een bioscoop</p>
+            <ul>
+                <li>
+                    <label>Amsterdam</label>
+                    <input type="checkbox" aria-label="Amsterdam" name="Amsterdam">
+                </li>
 
+                <li>
+                    <label>Rotterdam</label>
+                    <input type="checkbox" aria-label="Rotterdam" name="Rotterdam">
+                </li>
 
-            <label>Amsterdam</label>
-            <input type="checkbox"  aria-label="Amsterdam" name="Amsterdam">
-         
-            <label>Rotterdam</label>
-            <input type="checkbox" aria-label="Rotterdam" name="Rotterdam">
-          
-            <label>Den Haag</label>
-            <input type="checkbox" aria-label="Den Haag" name="Den Haag">
+                <li>
+                    <label>Den Haag</label>
+                    <input type="checkbox" aria-label="Den Haag" name="Den Haag">
+                </li>
 
-            <label>Amersfoort</label>
-            <input type="checkbox" name="Amersfoort">
+                <li>
+                    <label>Amersfoort</label>
+                    <input type="checkbox" aria-label="Amersfoort" name="Amersfoort">
+                </li>
 
-            <label>Arnhem</label>
-            <input type="checkbox" name="Arnhem">
+                <li>
+                    <label>Arnhem</label>
+                    <input type="checkbox" aria-label="Anrhem" name="Arnhem">
+                </li>
 
-            <label>Breda</label>
-            <input type="checkbox" name="Breda">
+                <li>
+                    <label>Breda</label>
+                    <input type="checkbox" aria-label="Breda" name="Breda">
+                </li>
 
-            <label>Delft</label>
-            <input type="checkbox" name="Delft">
+                <li>
+                    <label>Delft</label>
+                    <input type="checkbox" aria-label="Delft" name="Delft">
+                </li>
 
-            <label>Ede</label>
-            <input type="checkbox" name="Ede">
+                <li>
+                    <label>Ede</label>
+                    <input type="checkbox" aria-label="Ede" name="Ede">
+                </li>
 
-            <label>Eindhoven</label>
-            <input type="checkbox" name="Eindhoven">
+                <li>
+                    <label>Eindhoven</label>
+                    <input type="checkbox" aria-label="Eindhoven" name="Eindhoven">
+                </li>
 
-            <label>Groningen</label>
-            <input type="checkbox" name="Groningen">
-          
+                <li>
+                    <label>Groningen</label>
+                    <input type="checkbox" aria-label="Groningen" name="Groningen">
+                </li>
+            </ul>
         </section>
 
         <section>
             <h4>Trailers en foto's</h4>
-            <img src="images/Thumb_hungergames.webp" alt="Thumbnail The Hunger Games">
-            <img src="images/Thumb_hungergamest2.webp" alt="Thumbnail The Hunger Games">
+            <img src="images/Thumb_hungergames.webp" alt="Thumbnail The Hunger Games video 1">
+            <img src="images/Thumb_hungergamest2.webp" alt="Thumbnail The Hunger Games video 2">
         </section>
 
         <section>
             <h4>Foto's</h4>
             <ul>
                 <li><a href="#"><img src="images/2depage.jpg" alt="The Hunger Games"></a></li>
-                <li><a href="#"><img src="images/2depage1.jpg" alt="The Hunger Games"></a></li>
-                <li><a href="#"><img src="images/2depage2.jpg" alt="The Hunger Games"></a></li>
-                <li><a href="#"><img src="images/2depage3.jpg" alt="The Hunger Games"></a></li>
+                <li><a href="#"><img src="images/2depage1.jpg" alt="The Hunger Games IMAX"></a></li>
+                <li><a href="#"><img src="images/2depage2.jpg"
+                            alt="The Hunger Games Everyone hungers for something"></a></li>
+                <li><a href="#"><img src="images/2depage3.jpg" alt="The Hunger Games Suzanne Collins"></a></li>
             </ul>
         </section>
 

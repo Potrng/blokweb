@@ -7,12 +7,12 @@ var menuButton = document.querySelector("button");
 var menu = document.querySelector("nav");
 
 // stap 2: laat de menu-button luisteren naar kliks en voer dan een functie uit
-menuButton.onclick= hamburger; 
+menuButton.onclick = hamburger;
 
 // stap 3: voeg in de functie een class toe aan de nav
 
-function hamburger(){
- menu.classList.add("toonMenu"); console.log("hamburgermenuwerkt");
+function hamburger() {
+    menu.classList.add("toonMenu"); console.log("hamburgermenuwerkt");
 }
 
 /************************************/
@@ -23,11 +23,9 @@ var sluitButton = document.querySelector("nav button");
 
 var menu = document.querySelector("nav");
 
-sluitButton.onclick= sluitMenu; 
+sluitButton.onclick = sluitMenu;
 
-function sluitMenu(){
- menu.classList.remove("toonMenu"); console.log("hamburgermenuwerkt");
+function sluitMenu() {
+    menu.classList.remove("toonMenu"); console.log("hamburgermenuwerkt");
 }
-
-
 

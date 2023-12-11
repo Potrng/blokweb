@@ -52,7 +52,7 @@ https://www.pathe.nl
 
 ## Toegankelijkheidstest 1/2 (week 1)
 
-<details>
+<details open>
   <summary>uitwerken na test in 2<sup>e</sup> werkgroep</summary>
 Ik heb een ballon gebruikt om concentratie problemen na te boosten.
 Ik vond het erg lastig om de screenreader te gebruiken op mijn Macbook maar na een aantal keer geprobeerd te hebben is het mij gelukt.
@@ -72,15 +72,16 @@ screenreader
 - lees meer... maar waarover lees ik meer
 - Het menu klapt niet open wanneer je gebruikt maakt van de screenreader 
 - Het lezen van de headings gaat erg moeizaam omdat het niet alle kopjes opleest, het springt van 2 naar 4. Terwijl ik ook H1 en H3 mis. 
-- De menu leest hij alle kopjes als H4
+- De menu leest alle kopjes als H4
 - De links geven goed uitleg wat je kan zien maar nog iets te kort van wat het echt laat zien
+- Je kan niet door de website heen tabben
 
 
 </details>
 
 ## Breakdownschets (week 1)
 
-<details>
+<details open>
   <summary>uitwerken na afloop 3<sup>e</sup> werkgroep</summary>
 
   ### de hele pagina: 
@@ -100,7 +101,7 @@ screenreader
 
 ## Voortgang 1 (week 2)
 
-<details>
+<details open>
   <summary>uitwerken voor 1<sup>e</sup> voortgang</summary>
 
   ### Stand van zaken
@@ -138,7 +139,7 @@ Twijfelt nog welke website ze moet kiezen.
 
 ## Voortgang 2 (week 3)
 
-<details>
+<details open>
   <summary>uitwerken voor 2<sup>e</sup> voortgang</summary>
 
   ### Stand van zaken
@@ -147,7 +148,6 @@ Twijfelt nog welke website ze moet kiezen.
   De oefeningen blijf ik steeds maken maar blijf wel bij mijn eigen piste. Verder de eerste pagina uitgewerkt en het was lastig om de foto's op dezelfde hoogte en breedte te zetten. De 'postion' van mijn navigatie was verkeerd omdat mijn H1 niet zichtbaar was op mijn website. Omdat ik bij position:absolute was en niet sticky. Ik heb in de werkgroep geleerd dat het aan de bovenkant moest plakken zodat de andere content wel zichtbaar was op mijn website.
 
   - Vragen voor mijn tweede pagina waarom ik er geen tekst onder kan zetten zonder dat H2 verschuift.
-
   - Scrollen website? Overflow? 
 
   ### Verslag van meeting
@@ -165,7 +165,7 @@ Twijfelt nog welke website ze moet kiezen.
 
 ## Toegankelijkheidstest 2/2 (week 4)
 
-<details>
+<details open>
   <summary>uitwerken na test in 9<sup>e</sup> werkgroep</summary>
 
   ### Bevindingen
@@ -192,7 +192,7 @@ WCAG Checklist
 
 ## Voortgang 3 (week 4)
 
-<details>
+<details open>
   <summary>uitwerken voor 3<sup>e</sup> voortgang</summary>
 
   ### Stand van zaken
@@ -205,10 +205,10 @@ WCAG Checklist
   ### Verslag van meeting
   hier na afloop snel de uitkomsten van de meeting vastleggen
 
-  - punt 1
-  - punt 2
-  - nog een punt
-  - ...
+  - Checkboxes in een ul/ li zetten en dan flexbox. Misschien werkt dat om de checkboxes naast de text te zetten. 
+  - Iframe in mp4 zetten zodat je geen error meer hebt dat kan je proberen.
+  - Focus whitin/ focus visible voor tabben toegankelijkheid. 
+  - Dark/light mode in de root passen CSS is gelukt. Ik weet nu ook waarom en wat ik ook doe. 
 
 </details>
 
@@ -218,7 +218,7 @@ WCAG Checklist
 
 ## Eindgesprek (week 5)
 
-<details>
+<details open>
   <summary>uitwerken voor eindgesprek</summary>
 
   ### Je uitkomst - karakteristiek screenshots:
@@ -228,13 +228,19 @@ WCAG Checklist
   ### Dit ging goed/Heb ik geleerd: 
   Korte omschrijving met plaatjes
 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="top">
+Het viel mij enorm op tijdens de toegankelijkheids test dat als ik aan het tabben was door mijn website dat hij door mijn menu gaat maar daarna verdwijnt en niet meer weet waar je aan het tabben bent. Hij gaat dan door mijn hele menu heen maar dat is niet zichtbaar. Ik heb dit als vraag gesteld tijdens het voortganggesprek en daarin heb ik geleerd over focus within. Ik heb de bron bij de bronnenlijst gezet waar ik meer informatie over hebt geleerd. 
+  <img src="readme-images/focuswithin.png" width="375px" alt="top">
 
+Hoe meer ik bezig was met het stylen van mijn website ging het steeds makkelijker met het aanroepen van bepaalde html elementen in mijn Css. Daar ben ik wel blij mee en kreeg ik langzamerhand ook het gevoel waar ik nou mee bezig was! Zoals de attribute en de verschillende Css selectoren te gebruiken. 
 
   ### Dit was lastig/Is niet gelukt:
   Korte omschrijving met plaatjes
 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="bummer">
+Ik wilde een slider toepassen zodat je door verschillende plaatjes kon doorscrollen. Doormiddel van een Youtube Filmpje heb ik gezien dat je overflow-x : auto kan gebruiken om een slider toe te passen. Het is veel moeilijker als je alles al hebt staan en dingen wilt veranderen. Alles gaat dan verschuiven en dan heb je niet echt overzicht meer van wat je nou moet aanspreken. Zoals je kan zien in de screenshot deed mijn button raar en kreeg ik hem niet meer normaal op mijn website. Ik had niet genoeg tijd om mijn hele voorpagina om te gooien en de slider toe te passen. 
+  <img src="readme-images/Slider_Mislukt.png" width="375px" alt="bummer">
+
+Ik heb bij het voortganggesprek aangegeven dat ik een error had in mijn Html en dat was bij mijn Youtube filmpje. Er werd als tip gegeven dat ik het in een Mp4 bestand kan doen. Wanneer ik het in een Mp4 bestand deed kreeg ik het filmpje niet meer te zien. Ook heb ik geprobeerd het filmpje zelf op te slaan in mijn bestand en het dan aanroepen in mijn Html dat lukte helaas ook niet.
+  <img src="readme-images/error_iframe.png" width="375px" alt="bummer">
 </details>
 
 
@@ -254,5 +260,10 @@ WCAG Checklist
   2. https://www.youtube.com/watch?v=ly36kn0ug4k (Youtube filmpje in html/css zetten)
   3. https://developer.mozilla.org/en-US/docs/Web/CSS/z-index (Navigatie en Youtube filmpje stond niet goed onder elkaar, gebruik gemaakt van Z Index voor position:relative)
   4. https://css-tricks.com/focusing-on-focus-styles/ (:Focus states styling voor het tabben )
+  5. https://developer.mozilla.org/en-US/docs/Web/CSS/:focus-within (:focus-within meer informatie)
+  6. https://developer.mozilla.org/en-US/docs/Web/CSS/:hover (:hover styling meer informatie)
+  7. https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Attributes/aria-hidden (aria-hidden gebruikt voor nav menu).
+  8. https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Attributes/aria-label (Aria Label gebruikt voor checkboxes op te noemen bij screenreader)
+  9. Alle foto's/ video's komen van de Pathė site zelf. 
 
 </details>

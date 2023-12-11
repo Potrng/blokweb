@@ -4,7 +4,7 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Trade Gothic Bold Condensed 20", Arial, Helvetica, sans-serif;
 }
 
 
@@ -18,6 +18,34 @@
   --color-background: #eee;
   --color-pathe: #ffc426;
   --color-background-body: #f5f5f5;
+  --color-sections: black;
+}
+
+@media (prefers-color-scheme:dark) {
+  :root {
+    --color-text: #111;
+    --color-background: #eee;
+    --color-pathe: #ffc426;
+    --color-background-body: rgb(38, 38, 38);
+  }
+
+  body {
+    color: #ffff;
+  }
+}
+
+@media (prefers-contrast:more) {
+  :root {
+    --color-text: rgb(0, 0, 0);
+    --color-background: rgb(255, 255, 255);
+    --color-pathe: #ffbb00;
+    --color-background-body: #ffffff;
+    --color-sections: black;
+  }
+
+  body {
+    font-weight: 600;
+  }
 }
 
 /**************************/
@@ -25,24 +53,22 @@
 /* HEADER */
 
 /************************/
-header {
-  background-color: var(--color-pathe);
-  min-height: 4em;
-  padding: 0 1em;
-  line-height: 2;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  position: sticky;
-  left: 0;
-  right: 0;
-  z-index: 1000;
-}
-
 body {
   background: var(--color-background-body);
 }
 
+header {
+  background-color: var(--color-pathe);
+  min-height: 4em;
+  padding: 0 1em;
+  line-height: 2em;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  z-index: 1000;
+  /* om de menu nog te openen bij pagina 2/ anders zie je het niet */
+}
 
 /* tekst in open menu */
 header a {
@@ -51,10 +77,12 @@ header a {
   text-decoration: none;
 }
 
+/* logo size*/
 header>a:first-of-type img {
   height: 3em;
 }
 
+/* button open menu */
 header button {
   padding: 0.5em;
   display: flex;
@@ -63,20 +91,22 @@ header button {
   border: none;
 }
 
+/* button open menu */
 header button img {
   height: 2em;
-} 
-
-header>button {
-  order: -1;
 }
 
-header button:focus{
+/* positie open menu en logo */
+header>button {
+  order: 1;
+}
+
+header button:focus {
   background-color: var(--color-background-body);
   outline: 3px solid var(--color-pathe);
 }
 
-a:focus{
+a:focus {
   background-color: var(--color-background-body);
   outline: 3px solid var(--color-pathe);
 }
@@ -87,15 +117,16 @@ a:focus{
 
 /************************/
 
+/* button sluit menu aan rechterkant*/
 nav button {
-  justify-self: start;
+  justify-self: end;
 }
 
+/* menu navigatie*/
 nav {
   padding: 1em;
   display: grid;
   align-content: start;
-  gap: 1em;
   position: fixed;
   left: 0;
   right: 0;
@@ -106,12 +137,19 @@ nav {
   background-color: var(--color-pathe);
 }
 
-/* Javascript menu micro interactie */
+/* Javascript menu micro interactie openklappen */
 nav.toonMenu {
   transform: translateY(0);
   transition: 0.3s;
 }
 
+/* Toegankelijker door de menu tabben */
+nav.toonMenu,
+nav:focus-within {
+  transform: translateX(0vw);
+}
+
+/* Styling navigatie */
 nav ul {
   list-style: none;
 }
@@ -123,6 +161,7 @@ nav a {
   border-bottom: solid 3px var(--color-background);
 }
 
+/* Styling zoekbalk */
 header input {
   padding: 0.8em;
   display: flex;
@@ -130,9 +169,14 @@ header input {
   border: none;
 }
 
-nav a:focus{
+nav a:focus {
   background-color: var(--color-background-body);
   outline: 3px solid var(--color-pathe);
+}
+
+/* Eerste regel in nav bold */
+nav li:nth-of-type(1) {
+  font-weight: bold;
 }
 
 /**************************/
@@ -144,16 +188,15 @@ nav a:focus{
 h1 {
   margin: 0.5em;
   text-transform: uppercase;
-font-family: "Trade Gothic Bold Condensed 20",Arial,Helvetica,sans-serif;
+  font-size: 28px;
+  color: #ffc426;
 }
 
 h2 {
   margin: 0.6em;
   text-transform: uppercase;
-  font-family: "Trade Gothic Bold Condensed 20",Arial,Helvetica,sans-serif;
   font-size: 22px;
 }
-
 
 /**************************/
 
@@ -161,7 +204,8 @@ h2 {
 
 /************************/
 
-
+/* Itemst Column verticaal boven naar beneden 
+Wrap naar nieuwe kolom als er geen ruimte is  */
 main section:nth-of-type(1) {
   display: flex;
   flex-flow: column wrap;
@@ -172,15 +216,89 @@ main section:nth-of-type(2) {
   flex-flow: column wrap;
 }
 
+main section:nth-of-type(3) {
+  display: flex;
+  flex-flow: column wrap;
+}
+
+/* Section styling */
 section ul {
   display: flex;
   justify-content: space-around;
   list-style: none;
-  padding-left: 1em;
-  padding-right: 1em;
+  margin-right: 1em;
+  margin-left: 1em;
 }
 
-@keyframes hungerGames {
+/*Animatie scale op images EERSTE SECTION*/
+main>section:nth-of-type(1) ul li:nth-of-type(1):hover {
+  animation-name: vergrootFoto;
+  animation-duration: 3s;
+  border: 2px solid var(--color-pathe);
+  border-radius: 0.5em;
+  background-color: var(--color-pathe);
+  font-weight: bold;
+}
+
+main>section:nth-of-type(1) ul li:nth-of-type(2):hover {
+  animation-name: vergrootFoto;
+  animation-duration: 1s;
+}
+
+main>section:nth-of-type(1) ul li:nth-of-type(3):hover {
+  animation-name: vergrootFoto;
+  animation-duration: 1s;
+}
+
+
+main>section:nth-of-type(1) ul li:nth-of-type(4):hover {
+  animation-name: vergrootFoto;
+  animation-duration: 1s;
+}
+
+/*Animatie scale op images TWEEDE SECTION*/
+main>section:nth-of-type(2) ul li:nth-of-type(1):hover {
+  animation-name: vergrootFoto;
+  animation-duration: 1s;
+}
+
+main>section:nth-of-type(2) ul li:nth-of-type(2):hover {
+  animation-name: vergrootFoto;
+  animation-duration: 1s;
+}
+
+main>section:nth-of-type(2) ul li:nth-of-type(3):hover {
+  animation-name: vergrootFoto;
+  animation-duration: 1s;
+}
+
+main>section:nth-of-type(2) ul li:nth-of-type(4):hover {
+  animation-name: vergrootFoto;
+  animation-duration: 1s;
+}
+
+/*Animatie scale op images DERDE SECTION*/
+main>section:nth-of-type(3) ul li:nth-of-type(1):hover {
+  animation-name: vergrootFoto;
+  animation-duration: 1s;
+}
+
+main>section:nth-of-type(3) ul li:nth-of-type(2):hover {
+  animation-name: vergrootFoto;
+  animation-duration: 1s;
+}
+
+main>section:nth-of-type(3) ul li:nth-of-type(3):hover {
+  animation-name: vergrootFoto;
+  animation-duration: 1s;
+}
+
+main>section:nth-of-type(3) ul li:nth-of-type(4):hover {
+  animation-name: vergrootFoto;
+  animation-duration: 1s;
+}
+
+@keyframes vergrootFoto {
   0% {
     scale: 1;
   }
@@ -190,11 +308,7 @@ section ul {
   }
 }
 
-main>section:first-of-type ul li:first-child:hover {
-  animation-name: hungerGames;
-  animation-duration: 1s;
-}
-
+/*Ruimte tussen sections img*/
 section ul li {
   margin-right: 0.4em;
   margin-bottom: 1em;
@@ -205,17 +319,17 @@ section ul li img {
   height: auto;
 }
 
-main section:nth-of-type(1) p {
+/*P tekst onder img section 1*/
+main section:nth-of-type(1),
+main section:nth-of-type(2),
+main section:nth-of-type(3) {
+  font-size: 12px;
   display: flex;
   justify-content: center;
 }
 
-main section:nth-of-type(2) p {
-  display: flex;
-  justify-content: center;
-}
 
-
+/*Zie alle button*/
 main section a:nth-child(3) {
   display: flex;
   align-items: center;
@@ -232,6 +346,7 @@ main section a:nth-child(3) {
   margin-bottom: 1em;
 }
 
+/*Zie alle button svg*/
 main section a:nth-child(3) svg {
   height: 1.5em;
   fill: none;
@@ -247,14 +362,13 @@ main section a:nth-child(3) svg {
 
 /************************/
 
-main article h2 {
+main article h1 {
   display: none;
 }
 
+/*Youtube*/
 article {
-  /*Youtube*/
   position: relative;
-
 }
 
 article iframe {
@@ -263,13 +377,15 @@ article iframe {
 
 }
 
+/*img die youtube filmpje overlapt*/
 article img {
   position: absolute;
-  top: 12em;
+  top: 8em;
   left: 1em;
   max-width: 60%;
   max-height: 60%;
 }
+
 /**************************/
 
 /* DERDE SECTION TWEEDE PAGINA */
@@ -278,7 +394,6 @@ article img {
 
 [class="detail"] section:nth-of-type(1) {
   text-align: right;
-
 }
 
 /*SVG Hartje kleuren*/
@@ -320,7 +435,7 @@ section div img {
   text-transform: uppercase;
 }
 
-[class="detail"] section:nth-of-type(1)>button:focus{
+[class="detail"] section:nth-of-type(1)>button:focus {
   background-color: var(--color-background-body);
   outline: 3px solid var(--color-pathe);
 }
@@ -340,11 +455,16 @@ main div svg:hover {
 }
 
 /*knop 'lees meer' tekst*/
+[class="detail"] section:nth-of-type(2) p {
+  font-size: 16px;
+}
+
 details {
   display: block;
   padding: 1em;
   background-color: var(--color-pathe);
   margin-top: 1em;
+  cursor: pointer;
 }
 
 details summary {
@@ -353,7 +473,11 @@ details summary {
   text-align: center;
 }
 
-details summary:focus{
+details p {
+  margin-top: 1em;
+}
+
+details summary:focus {
   background-color: var(--color-background-body);
   outline: 3px solid var(--color-pathe);
 }
@@ -373,33 +497,43 @@ section p:nth-of-type(1) {
 }
 
 /* checkboxes bioscopen locaties*/
-[class="detail"] section:nth-of-type(3) {
+[class="detail"] section:nth-of-type(3) ul li {
+  /*alleen de tekst en checkboxes*/
+  margin: 1em;
+}
+
+[class="detail"] section:nth-of-type(3) ul {
+  /*de gehele ruimte waar de checkboxes en tekst staan*/
   display: flex;
   flex-direction: column;
-  margin-left: 2em;
+  align-items: flex-start;
+  font-size: 13px;
 }
 
-[class="detail"] section h3 {
+[class="detail"] section:nth-of-type(3) h3 {
   padding: 1em;
   text-transform: uppercase;
-  background-color: var(--color-background);
 }
 
+[class="detail"] section:nth-of-type(3) p {
+  margin-left: 1.1em;
+  font-size: 16px;
+}
 
 /* section 'trailers en fotos'*/
-[class="detail"] section:nth-of-type(4) h4 {
-  margin-left: 0.5em;
-}
-
 [class="detail"] section:nth-of-type(4) {
-  background-color: black;
-  color: white;
+  background-color: var(--color-sections);
   font-weight: bold;
   text-transform: uppercase;
   display: flex;
   justify-content: flex-start;
   padding: 0.5em;
   margin-top: 1em;
+}
+
+[class="detail"] section:nth-of-type(4) h4 {
+  margin-left: 0.5em;
+  color: white
 }
 
 [class="detail"] section:nth-of-type(4) img {
@@ -416,7 +550,7 @@ section:nth-of-type(5) h4 {
 }
 
 [class="detail"] section:nth-of-type(5) {
-  background-color: black;
+  background-color: var(--color-sections);
   padding: 2em;
   color: white;
 }
@@ -427,7 +561,6 @@ section:nth-of-type(6) h4 {
 }
 
 [class="detail"] section:nth-of-type(6) {
-  background-color: white;
   padding: 3em;
   display: flex;
   justify-content: center;
@@ -448,6 +581,7 @@ section:nth-of-type(6) h4 {
   background-color: var(--color-background-body);
   outline: 3px solid var(--color-pathe);
 }
+
 /* FOOTER*/
 footer {
   position: sticky;
