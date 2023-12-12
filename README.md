@@ -241,6 +241,18 @@ Ik wilde een slider toepassen zodat je door verschillende plaatjes kon doorscrol
 
 Ik heb bij het voortganggesprek aangegeven dat ik een error had in mijn Html en dat was bij mijn Youtube filmpje. Er werd als tip gegeven dat ik het in een Mp4 bestand kan doen. Wanneer ik het in een Mp4 bestand deed kreeg ik het filmpje niet meer te zien. Ook heb ik geprobeerd het filmpje zelf op te slaan in mijn bestand en het dan aanroepen in mijn Html dat lukte helaas ook niet.
   <img src="readme-images/error_iframe.png" width="375px" alt="bummer">
+
+WCAG Checklist
+
+ <img src="readme-images/checklist" width="375px" alt="wcag">
+
+ <img src="readme-images/checklist1" width="375px" alt="wcag">
+
+  <img src="readme-images/checklist2" width="375px" alt="wcag">
+
+  <img src="readme-images/checklist3" width="375px" alt="wcag">
+
+  <img src="readme-images/checklist4" width="375px" alt="wcag">
 </details>
 
 
