@@ -244,15 +244,15 @@ Ik heb bij het voortganggesprek aangegeven dat ik een error had in mijn Html en 
 
 WCAG Checklist
 
- <img src="readme-images/checklist" width="375px" alt="wcag">
+ <img src="readme-images/checklist.png" width="375px" alt="wcag">
 
- <img src="readme-images/checklist1" width="375px" alt="wcag">
+ <img src="readme-images/checklist1.png" width="375px" alt="wcag">
 
-  <img src="readme-images/checklist2" width="375px" alt="wcag">
+  <img src="readme-images/checklist2.png" width="375px" alt="wcag">
 
-  <img src="readme-images/checklist3" width="375px" alt="wcag">
+  <img src="readme-images/checklist3.png" width="375px" alt="wcag">
 
-  <img src="readme-images/checklist4" width="375px" alt="wcag">
+  <img src="readme-images/checklist4.png" width="375px" alt="wcag">
 </details>
 
 
