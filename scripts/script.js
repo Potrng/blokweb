@@ -19,8 +19,6 @@ function hamburger() {
 
 var sluitButton = document.querySelector("nav button");
 
-var menu = document.querySelector("nav");
-
 sluitButton.onclick = sluitMenu;
 
 function sluitMenu() {

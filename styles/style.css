@@ -19,6 +19,7 @@
   --color-pathe: #ffc426;
   --color-background-body: #f5f5f5;
   --color-sections: black;
+  --color-extra: #3d3d3e;
 }
 
 @media (prefers-color-scheme:dark) {
@@ -32,6 +33,20 @@
   body {
     color: #ffff;
   }
+
+  nav li a:focus {
+    background-color: var(--color-background);
+  }
+
+  [class="detail"] section div img {
+    filter: invert(1);
+  }
+
+  [class="detail"] section:nth-of-type(1)>button {
+    color: var(--color-background);
+  }
+
+
 }
 
 @media (prefers-contrast:more) {
@@ -110,6 +125,8 @@ a:focus {
   background-color: var(--color-background-body);
   outline: 3px solid var(--color-pathe);
 }
+
+
 
 /**************************/
 
@@ -266,8 +283,18 @@ main>section:nth-of-type(2) ul li:nth-of-type(2):hover {
 }
 
 main>section:nth-of-type(2) ul li:nth-of-type(3):hover {
-  animation-name: vergrootFoto;
-  animation-duration: 1s;
+  animation-name: Rotate;
+  animation-duration: 3s;
+}
+
+@keyframes Rotate {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
 }
 
 main>section:nth-of-type(2) ul li:nth-of-type(4):hover {
@@ -276,22 +303,34 @@ main>section:nth-of-type(2) ul li:nth-of-type(4):hover {
 }
 
 /*Animatie scale op images DERDE SECTION*/
-main>section:nth-of-type(3) ul li:nth-of-type(1):hover {
+
+main>section:nth-child(4) ul li:nth-of-type(1):hover {
   animation-name: vergrootFoto;
   animation-duration: 1s;
 }
 
-main>section:nth-of-type(3) ul li:nth-of-type(2):hover {
+main>section:nth-child(4) ul li:nth-of-type(2):hover {
   animation-name: vergrootFoto;
   animation-duration: 1s;
 }
 
-main>section:nth-of-type(3) ul li:nth-of-type(3):hover {
-  animation-name: vergrootFoto;
-  animation-duration: 1s;
+main>section:nth-child(4) ul li:nth-of-type(3):hover {
+  animation-name: Vlieg;
+  animation-duration: 3s;
 }
 
-main>section:nth-of-type(3) ul li:nth-of-type(4):hover {
+@keyframes Vlieg {
+  0% {
+    transform: translateX(0);
+  }
+
+  50% {
+    transform: translate(100%, -100%);
+  }
+
+}
+
+main>section:nth-child(4) ul li:nth-of-type(4):hover {
   animation-name: vergrootFoto;
   animation-duration: 1s;
 }
@@ -354,7 +393,221 @@ main section a:nth-child(3) svg {
   stroke-linejoin: round;
 }
 
-/**************************/
+main section a:nth-child(3):hover {
+  background-color: var(--color-pathe);
+}
+
+main section a:nth-child(3):active {
+  color: var(--color-background);
+}
+
+/*Bestel nu je tickets section*/
+main section:nth-of-type(4) {
+  background-color: var(--color-extra);
+  color: var(--color-background);
+  padding: 2em;
+  margin-top: 1.5em;
+}
+
+main section:nth-of-type(4) h3 {
+  text-transform: uppercase;
+  margin-bottom: 2em;
+}
+
+/*Zoekbalk postcode of plaats*/
+main section:nth-of-type(4) input {
+  margin-top: 1em;
+  width: 14em;
+  height: 3em;
+  padding: 0.8em;
+}
+
+main section:nth-of-type(4) svg {
+  height: 1.5em;
+  stroke-width: 2px;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  background-color: #ffbb00;
+  border-radius: 0.2em;
+}
+
+main section:nth-of-type(4) svg {
+  position: relative;
+  top: 0.5em;
+  right: 2.3em;
+}
+
+main section:nth-of-type(4) svg:hover {
+  animation-name: vergrootFoto;
+  animation-duration: 1s;
+}
+
+/*Section dit vond je interessant*/
+main section:nth-of-type(5) {
+  background-color: var(--color-extra);
+  color: var(--color-background);
+  padding: 2em;
+}
+
+main section:nth-of-type(5) div:nth-child(2) {
+  background-color: var(--color-text);
+  padding: 2.5em;
+  margin-top: 1em;
+  display: flex;
+  flex-direction: column;
+  border-radius: 16px;
+}
+
+main section:nth-of-type(5) h3:nth-of-type(1) {
+  text-transform: uppercase;
+  font-weight: bold;
+  margin-bottom: 1.5em;
+}
+
+main section:nth-of-type(5) div:nth-child(2) p:nth-of-type(1) {
+  margin-right: auto;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+main section:nth-of-type(5) div:nth-child(2) img {
+  max-width: 100%;
+  width: 100%;
+  height: auto;
+  border-radius: 4px;
+}
+
+main section:nth-child(6) a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: var(--color-background);
+  padding: 0.5em;
+  border: 1px solid #ffc426;
+  border-radius: 0.6em;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 1;
+  font-size: 13px;
+  margin-top: 2em;
+  margin-bottom: 1em;
+}
+
+main section:nth-of-type(5) a:hover {
+  background-color: var(--color-pathe);
+  font-weight: bold;
+}
+
+main section:nth-of-type(5) a:active {
+  color: var(--color-background);
+  background-color: var(--color-pathe);
+}
+
+main section:nth-of-type(5) a:focus {
+  background-color: var(--color-text);
+  outline: 3px solid var(--color-pathe);
+}
+
+/*Section De Meeslepende Filmbeleving*/
+main section:nth-child(7) {
+  background-color: var(--color-extra);
+  color: var(--color-background);
+  padding: 2em;
+}
+
+main section:nth-child(7) img {
+  max-width: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+main section:nth-child(7) h3 {
+  text-transform: uppercase;
+  margin-bottom: 2em;
+}
+
+main section:nth-child(7) p {
+  position: relative;
+  bottom: 10em;
+  font-size: 12px;
+}
+
+main section:nth-child(7) a {
+  align-items: center;
+  color: var(--color-text);
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 15px;
+  border: 1px solid #ffc426;
+  padding: 0.5em;
+  border-radius: 0.6em;
+  background-color: var(--color-pathe);
+  position: relative;
+  bottom: 7em;
+  left: 0.5em;
+}
+
+main section:nth-of-type(6) a:hover {
+  background-color: var(--color-background);
+}
+
+main section:nth-of-type(6) a:active {
+  color: var(--color-pathe);
+  background-color: var(--color-background);
+}
+
+main section:nth-of-type(6) a:focus {
+  background-color: white;
+  outline: 3px solid var(--color-pathe);
+}
+
+/*Section Club Pathe abbonementen*/
+main section:nth-child(8) {
+  background-color: var(--color-extra);
+  color: var(--color-background);
+  padding: 2em;
+}
+
+main section:nth-child(8) img {
+  max-width: 30%;
+  width: 100%;
+}
+
+main section:nth-child(8) p {
+  margin-bottom: 2em;
+}
+
+main section:nth-child(8) a {
+  align-items: center;
+  color: var(--color-text);
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 15px;
+  border: 1px solid #ffc426;
+  padding: 0.5em;
+  border-radius: 0.6em;
+  background-color: var(--color-pathe);
+  margin-left: 0.5em;
+}
+
+main section:nth-of-type(7) a:hover {
+  background-color: var(--color-background);
+}
+
+main section:nth-of-type(7) a:active {
+  color: var(--color-pathe);
+  background-color: var(--color-background);
+}
+
+main section:nth-of-type(7) a:focus {
+  background-color: white;
+  outline: 3px solid var(--color-pathe);
+}
+
+
+/************************/
 
 /* TWEEDE PAGINA */
 
@@ -425,18 +678,26 @@ section div img {
   margin-top: 1em;
   margin-bottom: 3em;
   margin-left: auto;
-  background-color: var(--color-pathe);
-  color: var(--color-text);
-  border: none;
+  border: 2px solid #ffc426;
+  background-color: var(--color-background-body);
   border-radius: 0.6em;
   font-weight: bold;
   text-transform: uppercase;
 }
 
+[class="detail"] section:nth-of-type(1)>button:hover {
+  background-color: var(--color-pathe);
+}
+
 [class="detail"] section:nth-of-type(1)>button:focus {
-  background-color: var(--color-background-body);
+  background-color: var(--color-pathe);
   outline: 3px solid var(--color-pathe);
 }
+
+[class="detail"] section:nth-of-type(1)>button:active {
+  color: var(--color-background);
+}
+
 
 /*tekst 'tickets online beschikbaar etc.'*/
 main div {
@@ -475,9 +736,13 @@ details p {
   margin-top: 1em;
 }
 
+details summary:hover {
+  color: var(--color-background-body);
+}
+
 details summary:focus {
-  background-color: var(--color-background-body);
-  outline: 3px solid var(--color-pathe);
+  color: var(--color-background-body);
+  outline: 3px solid var(--color-background);
 }
 
 [class="detail"] section:nth-of-type(2) h2 {
@@ -498,6 +763,9 @@ section p:nth-of-type(1) {
 [class="detail"] section:nth-of-type(3) ul li {
   /*alleen de tekst en checkboxes*/
   margin: 1em;
+  display: flex;
+  flex-direction: row-reverse;
+  gap: 1em;
 }
 
 [class="detail"] section:nth-of-type(3) ul {
@@ -505,7 +773,7 @@ section p:nth-of-type(1) {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  font-size: 13px;
+  font-size: 14px;
 }
 
 [class="detail"] section:nth-of-type(3) h3 {
@@ -518,67 +786,73 @@ section p:nth-of-type(1) {
   font-size: 16px;
 }
 
+input[type="checkbox"] {
+  accent-color: var(--color-pathe);
+}
+
+
 /* section 'trailers en fotos'*/
 [class="detail"] section:nth-of-type(4) {
   background-color: var(--color-sections);
   font-weight: bold;
   text-transform: uppercase;
-  display: flex;
-  justify-content: flex-start;
   padding: 0.5em;
   margin-top: 1em;
+  display: flex;
+  align-items: flex-start;
 }
 
 [class="detail"] section:nth-of-type(4) h4 {
   margin-left: 0.5em;
-  color: white
+  color: white;
 }
 
 [class="detail"] section:nth-of-type(4) img {
-  max-width: 30%;
-  max-height: 30%;
+  max-width: 100%;
+  min-width: 0%;
   height: auto;
   margin-right: 0.5em;
-  margin-top: 2em;
+  margin-top: 4em;
 }
 
-/* section onder 'trailers en fotos' met fotos*/
+/* section 'schrijf een recensie'*/
 section:nth-of-type(5) h4 {
   display: none;
 }
 
 [class="detail"] section:nth-of-type(5) {
-  background-color: var(--color-sections);
-  padding: 2em;
-  color: white;
-}
-
-/* section 'schrijf een recensie'*/
-section:nth-of-type(6) h4 {
-  display: none;
-}
-
-[class="detail"] section:nth-of-type(6) {
   padding: 3em;
   display: flex;
   justify-content: center;
+  background-color: var(--color-sections);
 }
 
-[class="detail"] section:nth-of-type(6) button {
+[class="detail"] section:nth-of-type(5) button {
   width: 20em;
   padding: 0.5em 1em;
   background-color: var(--color-pathe);
-  color: var(--color-text);
-  border: none;
+  border: 1px solid #ffc426;
   border-radius: 0.6em;
   font-weight: bold;
   text-transform: uppercase;
 }
 
-[class="detail"] section:nth-of-type(6) button:focus {
-  background-color: var(--color-background-body);
+[class="detail"] section:nth-of-type(5) button:hover {
+  background-color: var(--color-background);
+}
+
+[class="detail"] section:nth-of-type(5) button:active {
+  color: var(--color-pathe);
+  background-color: var(--color-background);
+}
+
+[class="detail"] section:nth-of-type(5) button:focus {
+  background-color: white;
   outline: 3px solid var(--color-pathe);
 }
+
+
+
 
 /* FOOTER*/
 footer {

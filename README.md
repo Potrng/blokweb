@@ -255,9 +255,28 @@ WCAG Checklist
   <img src="readme-images/checklist4.png" width="375px" alt="wcag">
 </details>
 
+## Herkansing eindgesprek 25 januari 2024
+<details open>
+Ik kreeg een 4,5 voor het FED eindgesprek. De feedback was dat ik alle interactieve elementen ook interactief moest maken. 
 
+Ook moest ik zorgen dat dingen goed op hun plek moesten staan. Ik was namelijk meer gefocust op de code dan echt alle kleine details qua vormgeving. Dus dat vond ik erg jammer.
 
+  ### Dit ging goed:
+Ik vond het zonde dat ik op kleine puntjes werd beoordeeld. Maar zag het als kans en een uitdaging om 10x meer te laten zien. Ook uit angst dat ik het weer niet zal halen of dat ik het net aan zou halen. 
 
+Ik begon eerst met de feedback te verwerken en alle interactieve elementen interactief gemaakt en een active state bij toegevoegd. Ook heb ik goed gekeken welke punten netter konden. Wanneer ik die twee had gedaan keek ik verder wat ik nog meer kon toepassen op mijn website. 
+
+Daarna begon ik te kijken wat ik nog meer kon toevoegen qua interacties en animaties op mijn website. Op de hoofdpagina heb ik bij twee foto's animaties toegepast om de foto er meer uit te laten springen. 
+
+Ik heb daarna een extra pagina eronder toegevoegd wat niet bepaald echt bij de vormgeving past maar het laat wel zien dat ik verschillende dingen kan toepassen. 
+
+Bij de tweede pagina heb ik alles goed gelijnd onder elkaar en de checkboxes ingekleurd. Die hebben een oranje kleur als je ze aanvinkt. 
+
+Ik heb bij beide pagina's goed gekeken of alles zichtbaar is wanneer je de dark mode inzit. Want daar had ik een klein foutje gemaakt bij het vorige eindgesprek.
+
+  ### Dit was lastig/Is niet gelukt:
+Ik wilde mezelf uitdagen om weer een poging te doen om een slider toe te passen wat in theorie wel te doen is. Ik kwam in de knoop met de afbeeldingen, hoe meer afbeeldingen ik naast elkaar zette hoe kleiner de afbeeldingen werden. De slider was wel toegepast maar de afbeeldingen waren niet te zien. Ik probeerde zelf te zoeken waar de fout was maar kon het niet echt vinden dus heb ik het maar gelaten voor wat het was. 
+</details>
 
 ## Bronnenlijst
 
@@ -276,6 +295,8 @@ WCAG Checklist
   6. https://developer.mozilla.org/en-US/docs/Web/CSS/:hover (:hover styling meer informatie)
   7. https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Attributes/aria-hidden (aria-hidden gebruikt voor nav menu).
   8. https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Attributes/aria-label (Aria Label gebruikt voor checkboxes op te noemen bij screenreader)
-  9. Alle foto's/ video's komen van de Pathė site zelf. 
+  9. https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_animations/Using_CSS_animations (Voor animaties extra info)
+  10. https://sentry.io/answers/how-to-style-a-checkbox-using-css/ (info voor styling checkboxes)
+  11. Alle foto's/ video's komen van de Pathė site zelf. 
 
 </details>
