@@ -46,6 +46,9 @@
     color: var(--color-background);
   }
 
+  [class="detail"] section:nth-of-type(4) div {
+    filter: invert(1);
+  }
 
 }
 
@@ -125,8 +128,6 @@ a:focus {
   background-color: var(--color-background-body);
   outline: 3px solid var(--color-pathe);
 }
-
-
 
 /**************************/
 
@@ -798,21 +799,23 @@ input[type="checkbox"] {
   text-transform: uppercase;
   padding: 0.5em;
   margin-top: 1em;
-  display: flex;
-  align-items: flex-start;
 }
 
 [class="detail"] section:nth-of-type(4) h4 {
-  margin-left: 0.5em;
+  padding: .5em 0em;
   color: white;
 }
 
-[class="detail"] section:nth-of-type(4) img {
-  max-width: 100%;
-  min-width: 0%;
+[class="detail"] section:nth-of-type(4) div {
   height: auto;
-  margin-right: 0.5em;
-  margin-top: 4em;
+  margin: 0;
+  display: block;
+}
+
+[class="detail"] section:nth-of-type(4) div img {
+  height: auto;
+  margin: 0;
+  width: 11em;
 }
 
 /* section 'schrijf een recensie'*/
@@ -850,9 +853,6 @@ section:nth-of-type(5) h4 {
   background-color: white;
   outline: 3px solid var(--color-pathe);
 }
-
-
-
 
 /* FOOTER*/
 footer {
